@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 變數 */
+:root {
+    --primary:#645cff;
+    --primary-dark:#3c3799;
+    --grey:#64748b;
+    --grey-light:#f1f5f9;
+    --grey-dark:#0f172a; 
+    --border-radius: 0.15rem;
+
+}
+
+/* 設定body內容 */
+body {
+    /* font family 選擇字型 */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 12px;
+    color: var(--primary-dark);
+    background-color: var(--grey-light);
+}
+
+.img {
+    width: 100%;
+    height: 12rem;
+    display: block; 
+    object-fit: cover;
+}
+
+.blogs {
+    padding: 3rem 0 1.5rem;
+
+}
+
+.section-title h2{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+
+.blogs-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.blog {
+    background-color: white;
+    padding: 0.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 5px 10px 10px rgba(0,0,0, 0) ;
+    border-radius: var(--border-radius);
+}
+
+
+.blogs-center span {
+    text-transform: uppercase;
+    color: var(--primary);
+    letter-spacing: 1.5px;
+    margin-top: 3px;
+}
+
+.blogs-center h3 {
+    text-transform: capitalize;
+    margin: 0.5rem 0;
+    letter-spacing: 1px;
+}
+
+.blogs-center p {
+    color: var(--grey);
+    margin-bottom: 0.5rem;
+}
+
+.blogs-center a {
+    color: var(--primary-dark);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
