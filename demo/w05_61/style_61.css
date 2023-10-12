@@ -134,3 +134,21 @@ body {
     }
 
 }
+@media screen and (min-width: 3000px){
+    .blogs-center{
+        grid-template-columns: repeat(7,1fr);
+    }
+
+}
+@media screen and (min-width: 3400px){
+    .blogs-center{
+        grid-template-columns: repeat(8,1fr);
+    }
+
+}
+@media screen and (min-width: 3800px){
+    .blogs-center{
+        grid-template-columns: repeat(9,1fr);
+    }
+
+}
