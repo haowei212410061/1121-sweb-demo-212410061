@@ -59,8 +59,14 @@ body {
 }
 
 .blogs-center {
-    margin-top: 0.5rem;
+    display: grid;
     grid-template-columns: 1fr; 
+    gap: 2rem;
+}
+
+.blogs-center2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(13rem,1fr)); 
     gap: 2rem;
 }
 
