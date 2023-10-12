@@ -90,47 +90,9 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* 在一個解析度下 */
-
-
-@media screen and (min-width: 400px){
-    .blogs-center{
-        grid-template-columns: repeat(1,1fr);
-    }
-
-}
-
-@media screen and (min-width: 800px){
+@media screen and (min-width: 630px){
     .blogs-center{
         grid-template-columns: repeat(2,1fr);
-    }
-
-}
-
-@media screen and (min-width: 1200px){
-    .blogs-center{
-        grid-template-columns: repeat(3,1fr);
-    }
-
-}
-
-@media screen and (min-width: 1600px){
-    .blogs-center{
-        grid-template-columns: repeat(4,1fr);
-    }
-
-}
-
-@media screen and (min-width: 2000px){
-    .blogs-center{
-        grid-template-columns: repeat(5,1fr);
-    }
-
-}
-
-@media screen and (min-width: 2600px){
-    .blogs-center{
-        grid-template-columns: repeat(6,1fr);
     }
 
 }
