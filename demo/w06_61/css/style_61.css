@@ -122,7 +122,15 @@ body {
     padding-bottom: 3px;
 }
 
-
+.navbar-fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 3px;
+    background-color: var(--clr-white);
+    box-shadow: var(--light-shadow);
+    z-index: 2;
+}
 
 
 
@@ -261,4 +269,17 @@ body {
         grid-template-columns: repeat(9,1fr);
     }
 
+}
+
+/* 
+W2: My Intro
+*/
+
+.container {
+    background-color: azure;
+    max-width: 500px;
+    width:  80%;
+    border: 2px solid purple;
+    padding: 16px 30px 24px 30px;
+    margin: 30px auto;
 }
