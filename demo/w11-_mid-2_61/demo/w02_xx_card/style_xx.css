@@ -1,0 +1,33 @@
+body {
+    background-color: #f1f5f9;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    padding: 1.5rem 2rem;
+    margin: 3rem;
+}
+
+.card-1 {
+  border-color: #ff69a6
+}
+
+.card-2 {
+  border-color: #63a8ff;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.card-1 .icon {
+    background:  #ff69a6;
+}
+
+.card-2 .icon {
+    background:   #63a8ff;
+}
