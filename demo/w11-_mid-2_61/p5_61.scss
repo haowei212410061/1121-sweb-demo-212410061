@@ -140,7 +140,7 @@ p2_61
   .cards {
     padding: 2rem 0;
 
-    .cards-center {
+    &-center {
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(13rem,1fr));
       /* gap: 0.5rem; */
@@ -208,6 +208,9 @@ p2_61
     background: #68a3ff;
   }
 }
+
+
+
 @media screen and (min-width: 500px) {
   .p2_61 {
     .cards {

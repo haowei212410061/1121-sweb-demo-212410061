@@ -50,6 +50,7 @@ body {
     &.card-1 {
       border-color: #ff69a6;
     }
+
     &.card-2 {
       border-color: #68a3ff;
     }
@@ -73,6 +74,7 @@ body {
     }
   }
 }
+
 .icon {
   width: 40px;
   height: 40px;
@@ -103,6 +105,7 @@ body {
     }
   }
 }
+
 @media screen and (min-width:900px) {
   .cards {
     .cards-center {

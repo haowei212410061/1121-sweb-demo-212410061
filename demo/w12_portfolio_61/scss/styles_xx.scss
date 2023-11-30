@@ -1,0 +1,33 @@
+@use 'global_xx';
+
+/*
+=============== 
+Navbar
+===============
+*/
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-primary-9); 
+    height: 4rem;
+    
+    &-center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative;//絕對定位 
+    }
+    &-links{
+        display: none;
+    }
+    &-btn{
+        position: absolute;
+        right: 1.5rem;
+        font-size: 2rem;//改變button的大小
+        color: var(--clr-primary-5);
+        background-color: transparent; //變成透明
+        border-color: transparent;//變成透明
+    }
+}
