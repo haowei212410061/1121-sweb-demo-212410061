@@ -62,6 +62,7 @@ Navbar
 
 .sidebar {
     position: fixed;
+    padding: 20px 20px 20px 20px;
     left: 0;
     top: 0;
     width: 100%;
@@ -105,4 +106,29 @@ Navbar
 
 .show-sidebar{
     transform: translateX(0);
+}
+
+.navbar-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: var(--light-shadow);
+    z-index: 5;
+  }
+
+.social-icons{
+    display: flex; //設置這個區塊的佈局為橫向的列
+    padding-top: 50px; // 與上方side-bar link的距離設置為50px
+    gap: 3rem; //每列距離為3rem
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon{
+    display: block;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    color: var(--clr-grey-5);
 }
