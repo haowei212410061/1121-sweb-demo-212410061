@@ -1,0 +1,203 @@
+@use 'global_xx';
+
+/*
+=============== 
+Navbar
+===============
+*/
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-primary-9);
+    height: 4rem;
+
+    &-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative; //絕對定位 
+    }
+
+    &-links {
+        display: none;
+    }
+
+    &-btn {
+        position: absolute;
+        right: 1.5rem;
+        font-size: 2rem; //改變button的大小
+        color: var(--clr-primary-5);
+        background-color: transparent; //變成透明
+        border-color: transparent; //變成透明
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .nav {
+        &-links {
+            display: flex;
+            gap: 1.5rem;
+            position: absolute;
+            right: 3rem;
+
+            li a {
+                color: var(--clr-grey-5);
+
+                &:hover {
+                    color: var(--clr-primary-5);
+                    border-bottom: 2px solid red;
+                }
+            }
+        }
+
+        &-btn {
+            display: none;
+        }
+    }
+
+}
+
+.sidebar {
+    position: fixed;
+    padding: 20px 20px 20px 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-grey-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    transform: translateX(-100%);
+
+    .close-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        background-color: transparent;
+        border-color: transparent;
+        color: #bb2525;
+        cursor: pointer;
+
+        &:hover {
+            color: #e66b61;
+
+        }
+
+
+    }
+
+    &-links {
+        text-align: center;
+
+        a {
+            font-size: 2rem;
+            text-transform: capitalize;
+            color: var(--clr-grey-5);
+            letter-spacing: var(--spacing);
+        }
+    }
+}
+
+.show-sidebar {
+    transform: translateX(0);
+}
+
+.navbar-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: var(--light-shadow);
+    z-index: 5;
+}
+
+.social-icons {
+    display: flex; //設置這個區塊的佈局為橫向的列
+    padding-top: 50px; // 與上方side-bar link的距離設置為50px
+    gap: 3rem; //每列距離為3rem
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    display: block;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    color: var(--clr-grey-5);
+    font-size: 30px;
+}
+
+// Hero
+
+.hero {
+
+    background-color: var(--clr-primary-10);
+
+    &-center {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: calc(100vh - 4rem);
+        place-items: center;
+    }
+
+    .underline {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    &-info h4 {
+        color: var(--clr-grey-5);
+    }
+
+    &-img {
+        display: none;
+
+    }
+
+    &-btn {
+        margin-top: 1.25rem;
+    }
+    &-icon {
+        justify-content: start;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero {
+        &-center {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &-img {
+            display: block;
+            width: 70%;
+            position: relative;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top:2rem;
+                right: -2rem;
+                width: 100%;
+                height: 100%;
+                border: 0.25rem solid var(--clr-primary-5);
+                border-radius: var(--radius);
+            }
+
+        }
+        &-photo{
+            max-width: 25rem;
+            max-height: 30rem;
+            object-fit: cover;
+            border-radius: var(--radius);
+            position: relative;
+        }
+    }
+}

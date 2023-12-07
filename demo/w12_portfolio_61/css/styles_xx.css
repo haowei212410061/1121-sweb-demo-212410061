@@ -179,5 +179,114 @@ p {
 Navbar
 ===============
 */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-primary-9);
+  height: 4rem;
+}
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.nav-links {
+  display: none;
+}
+.nav-btn {
+  position: absolute;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: var(--clr-primary-5);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    position: absolute;
+    right: 3rem;
+  }
+  .nav-links li a {
+    color: var(--clr-grey-5);
+  }
+  .nav-links li a:hover {
+    color: var(--clr-primary-5);
+    border-bottom: 2px solid red;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+.sidebar {
+  position: fixed;
+  padding: 20px 20px 20px 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-grey-10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  transform: translateX(-100%);
+}
+.sidebar .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border-color: transparent;
+  color: #bb2525;
+  cursor: pointer;
+}
+.sidebar .close-btn:hover {
+  color: #e66b61;
+}
+.sidebar-links {
+  text-align: center;
+}
+.sidebar-links a {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--clr-grey-5);
+  letter-spacing: var(--spacing);
+}
+
+.show-sidebar {
+  transform: translateX(0);
+}
+
+.navbar-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: var(--light-shadow);
+  z-index: 5;
+}
+
+.social-icons {
+  display: flex;
+  padding-top: 50px;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  display: block;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  color: var(--clr-grey-5);
+}
 
 /*# sourceMappingURL=styles_xx.css.map */
