@@ -303,7 +303,6 @@ Navbar
 .social-icon {
   display: block;
   border-radius: 5px;
-  background-color: antiquewhite;
   color: var(--clr-grey-5);
   font-size: 30px;
 }
@@ -405,6 +404,25 @@ Navbar
   .about-center {
     grid-template-columns: 1fr 1fr;
   }
+}
+.footer {
+  background-color: #222;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+.footer .social-icons {
+  margin-bottom: 1rem;
+}
+.footer .social-icon {
+  color: var(--clr-primary-5);
+}
+.footer .social-icon:hover {
+  color: var(--clr-primary-10);
+}
+.footer p {
+  text-transform: capitalize;
+  font-size: 1.25rem;
 }
 
 /*# sourceMappingURL=styles_xx.css.map */
