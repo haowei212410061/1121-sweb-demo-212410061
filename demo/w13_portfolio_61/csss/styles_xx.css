@@ -295,9 +295,7 @@ Navbar
 .social-icons {
   display: flex;
   padding-top: 50px;
-  gap: 3rem;
-  justify-content: center;
-  align-items: center;
+  gap: 2rem;
 }
 
 .social-icon {
@@ -319,6 +317,12 @@ Navbar
 .hero .underline {
   margin-left: 0;
   margin-bottom: 0.5rem;
+}
+.hero-social-icons {
+  padding-left: 0;
+}
+.hero-info {
+  padding-left: 0;
 }
 .hero-info h4 {
   color: var(--clr-grey-5);

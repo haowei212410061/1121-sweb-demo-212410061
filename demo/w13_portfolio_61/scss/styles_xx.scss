@@ -121,9 +121,7 @@ Navbar
 .social-icons {
     display: flex; //設置這個區塊的佈局為橫向的列
     padding-top: 50px; // 與上方side-bar link的距離設置為50px
-    gap: 3rem; //每列距離為3rem
-    justify-content: center;
-    align-items: center;
+    gap: 2rem;
 }
 
 .social-icon {
@@ -151,6 +149,13 @@ Navbar
         margin-bottom: 0.5rem;
     }
 
+    &-social-icons{
+        padding-left: 0;
+    }
+    &-info{
+        padding-left: 0;
+    }
+    
     &-info h4 {
         color: var(--clr-grey-5);
     }
