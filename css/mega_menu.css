@@ -683,3 +683,7 @@ img,video {
     height: 92vh;
     min-height: 100vh;
 }
+
+.menu-item-has-children i{
+    padding-right: 0;
+}
