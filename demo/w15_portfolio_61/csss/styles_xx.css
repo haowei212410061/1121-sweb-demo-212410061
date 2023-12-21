@@ -556,4 +556,69 @@ blogs的區塊
   font-size: 1.25rem;
 }
 
+.projects .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.projects-text {
+  width: 80vw;
+  margin: 0 auto;
+}
+.projects .underline {
+  margin-bottom: 2rem;
+}
+.projects .projects-center {
+  display: grid;
+  place-items: center;
+  border-radius: 10%;
+}
+.projects .projects-center .project {
+  position: relative;
+  margin-bottom: 2rem;
+  background-color: var(--clr-primary-5);
+  border-radius: 10%;
+}
+.projects .projects-center .project::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 0.25rem solid white;
+  transition: var(--transition);
+  border-radius: 10%;
+  opacity: 0;
+}
+.projects .projects-center .project:hover::after {
+  opacity: 1;
+  transform: scale(0.8);
+}
+.projects .projects-center .project-img {
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 10%;
+  transition: var(--transition);
+}
+.projects .projects-center .project-info {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  color: white;
+  opacity: 0;
+  transition: var(--transition);
+}
+.projects .projects-center .project p {
+  color: white;
+  font-size: 20px;
+}
+.projects .projects-center .project:hover .project-info {
+  opacity: 1;
+}
+.projects .projects-center .project:hover .project-img {
+  opacity: 0.3;
+}
+
 /*# sourceMappingURL=styles_xx.css.map */
