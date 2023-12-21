@@ -318,10 +318,7 @@ Navbar
   margin-left: 0;
   margin-bottom: 0.5rem;
 }
-.hero-social-icons {
-  padding-left: 0;
-}
-.hero-info {
+.hero-info-icon {
   padding-left: 0;
 }
 .hero-info h4 {
@@ -333,8 +330,12 @@ Navbar
 .hero-btn {
   margin-top: 1.25rem;
 }
-.hero-icon {
+.hero .hero-icon {
   justify-content: start;
+  display: block;
+  border-radius: 5px;
+  color: var(--clr-grey-5);
+  font-size: 30px;
 }
 
 @media screen and (min-width: 768px) {

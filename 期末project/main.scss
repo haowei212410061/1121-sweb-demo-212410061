@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,200;0,300;0,600;0,700;0,800;1,400;1,500&family=Rubik+Doodle+Shadow&display=swap');
+
+
+:root{
+    --color-content-1:red;
+    --color-content-2:orange;
+    --color-content-3:yellow;
+    --color-content-4:rgb(11, 59, 11);
+    --color-content-5:blue;
+    --color-content-6:purple;
+    --color-content-7:pink;
+    --color-content-8:brown;
+    --color-btn-1:rgb(185, 126, 126);
+    --color-btn-2:rgb(188, 149, 97);
+    --color-btn-3:rgb(188, 188, 97);
+    --color-btn-4:rgba(97, 188, 97,0.2);
+    --color-btn-5:rgb(97, 188, 188);
+    --color-btn-6:rgb(97, 97, 188);
+    --color-btn-7:rgb(188, 97, 188);
+    --dark:#363949;
+}
+
+.blog {
+    top: 0;
+    width: 340px;
+    height: 100%;
+    background-color:var(--color-btn-4);
+    position: fixed;
+    /* 位置固定 */
+    border-right: 0.5px solid var(--color-btn-4);
+
+    .main {
+        display: grid;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+        padding-top: 40px;
+        margin-left: 5px;
+    }
+    
+    .icon img {
+        display: block;
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 50%;
+    
+    }
+    
+    .main h4 {
+        font-size: 20px;
+        color: cadetblue;
+        text-transform: capitalize;
+        padding-top: 20px;
+        padding-left:40px;
+        font-family:'Poppins',sans-serif
+    
+    }
+    .navbar{
+        display: grid;
+        font-family:'Poppins',sans-serif ;
+        padding-top: 50px;
+        padding-left: 100px;
+        letter-spacing: 2px;
+        color: cadetblue;
+        align-items: center;
+        gap: 20px;
+        
+    }
+    .navbar a{
+        color: cadetblue;
+    }
+    .solo{
+        display: flex;
+        padding-top: 30px;
+        gap: 5px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+    }
+    
+    .classdemo a:hover{
+        color: var(--color-content-4);
+    }
+    .about a:hover{
+        color: var(--color-content-4);
+    }
+    .traning a:hover{
+        color: var(--color-content-4);
+    }
+    
+    
+
+    .demo{
+        display: none;
+    }
+    .social-icons{
+        display: flex;
+        gap: 2rem;
+        padding-top: 400px;
+        padding-left: 50px;
+        color: cadetblue;
+        position: fixed;
+    }
+    
+}
+
+
+

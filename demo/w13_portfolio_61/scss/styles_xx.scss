@@ -149,15 +149,18 @@ Navbar
         margin-bottom: 0.5rem;
     }
 
-    &-social-icons{
-        padding-left: 0;
+
+    &-info {
+
+        &-icon {
+            padding-left: 0;
+        }
     }
-    &-info{
-        padding-left: 0;
-    }
-    
+
     &-info h4 {
         color: var(--clr-grey-5);
+
+
     }
 
     &-img {
@@ -168,8 +171,13 @@ Navbar
     &-btn {
         margin-top: 1.25rem;
     }
-    &-icon {
+
+    .hero-icon {
         justify-content: start;
+        display: block;
+        border-radius: 5px;
+        color: var(--clr-grey-5);
+        font-size: 30px;
     }
 }
 
@@ -184,10 +192,10 @@ Navbar
             width: 70%;
             position: relative;
 
-            &::before{
+            &::before {
                 content: '';
                 position: absolute;
-                top:2rem;
+                top: 2rem;
                 right: -2rem;
                 width: 100%;
                 height: 100%;
@@ -196,7 +204,8 @@ Navbar
             }
 
         }
-        &-photo{
+
+        &-photo {
             max-width: 25rem;
             max-height: 30rem;
             object-fit: cover;
@@ -207,19 +216,19 @@ Navbar
 }
 
 // about section
-.about{
+.about {
     &-center {
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
     }
 
-    &-img{
+    &-img {
         display: block;
         width: 70%;
         position: relative;
 
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             top: 2rem;
@@ -232,7 +241,8 @@ Navbar
         }
 
     }
-    &-photo{
+
+    &-photo {
         max-width: 25rem;
         max-height: 30rem;
         object-fit: cover;
@@ -240,51 +250,53 @@ Navbar
         position: relative;
     }
 
-    &-title{
+    &-title {
         text-align: left;
         margin-top: 5rem;
 
     }
-    .underline{
+
+    .underline {
         margin-left: 0;
         margin-bottom: 0.5rem;
 
     }
-    &-info{
+
+    &-info {
         padding: 3rem;
     }
 
 
 }
 
-@media screen and (min-width:768px){
-    .about{
-        &-center{
+@media screen and (min-width:768px) {
+    .about {
+        &-center {
             grid-template-columns: 1fr 1fr;
         }
     }
 }
 
 // footer
-.footer{
+.footer {
     background-color: #222;
     display: grid;
     place-items: center;
     padding: 1rem;
 
-    .social-icons{
+    .social-icons {
         margin-bottom: 1rem;
     }
 
-    .social-icon{
+    .social-icon {
         color: var(--clr-primary-5);
 
-        &:hover{
+        &:hover {
             color: var(--clr-primary-10);
         }
     }
 
-    p{
+    p {
         text-transform: capitalize;
         font-size: 1.25rem;
     }
