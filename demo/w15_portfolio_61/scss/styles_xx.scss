@@ -488,34 +488,27 @@ blogs的區塊
         font-size: 1.25rem;
     }
 }
-
 .projects{
     .section-title{
         text-align: center;
         margin-bottom: 50px;
     }
-
     &-text{
         width: 80vw;
         margin: 0 auto;
     }
-
     .underline{
         margin-bottom: 2rem;
     }
-
     .projects-center{
-        display: grid;
-        place-items: center;
-        border-radius: 10%;
-    
 
+        border-radius: 40%;
+        
         .project{
             position: relative;
             margin-bottom: 2rem;
             background-color: var(--clr-primary-5);
-            border-radius: 10%;
-
+            
             &::after{
                 content: "";
                 position: absolute;
@@ -525,23 +518,21 @@ blogs的區塊
                 height: 100%;
                 border: 0.25rem solid white;
                 transition: var(--transition);
-                border-radius: 10%;
+                border-radius: 2%;
                 opacity: 0;
             }
-
             &:hover::after{
                 opacity: 1;
                 transform: scale(0.8); //整個白色邊框縮小
             }
 
             &-img{
-                height: 15rem;
+                
+                height: 100%;
                 object-fit: cover;
-                border-radius: 10%;
+                border-radius: 2%;
                 transition: var(--transition);
             }
-            
-
             &-info{
                 text-align: center;
                 position: absolute;
@@ -551,7 +542,7 @@ blogs的區塊
                 color: white;
                 opacity: 0;
                 transition: var(--transition);
-            }
+            } 
             p{
                 color:white;
                 font-size: 20px;
@@ -561,8 +552,59 @@ blogs的區塊
             }
             &:hover .project-img{
                 opacity: 0.3;
+                width: 100%;
                 
-            }
+            }   
+}
+}}
+
+@media screen and (min-width: 676px) {
+    .projects{
+        &-center{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
         }
     }
 }
+
+@media screen and (min-width: 992px) {
+    .projects{
+        &-center{
+            grid-template-columns:repeat(3,1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .projects{
+        &-center{
+            grid-template-rows: 15rem 15rem;
+            gap: 1rem;
+            grid-template-areas: 
+              "b a a"
+              "b c d"
+            ;
+        }
+        .project-img{
+            height: 100%;
+            width: 100%;
+        }
+        .project{
+            height: 100%;
+            width: 100%;
+        }
+        .project-1{
+            grid-area: a;
+        }
+        .project-2{
+            grid-area: b;
+        }
+        .project-3{
+            grid-area: c;
+        }
+        .project-4{
+            grid-area: d;
+        }
+    }
+    }
