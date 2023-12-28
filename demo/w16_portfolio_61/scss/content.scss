@@ -136,8 +136,6 @@ Navbar
         font-size: 18px;
         margin-top: 20px;
     }
-    
-
     .profile-1{
         width: 200px;
         height: 300px;
@@ -145,14 +143,12 @@ Navbar
         margin-top: 20px;
         margin-bottom: 20px;
         border: 1.5px solid grey;
-        border-radius: 10px 10px 0 0;
-        
+        border-radius: 10px 10px 0 0;        
         img{
             display: block;
             width: 100%;
             border-bottom: 1px solid gray;
             border-radius: 10px 10px 0 0;
-
         }
         .myself{
             display: flex;
@@ -160,8 +156,6 @@ Navbar
             justify-content: center;
             gap: 20px;
             color: grey;
-            
-
             .information{
                 left: 5;
             }
