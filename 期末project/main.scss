@@ -1,111 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,200;0,300;0,600;0,700;0,800;1,400;1,500&family=Rubik+Doodle+Shadow&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,200;0,300;0,600;0,700;0,800;1,400;1,500&family=Rubik+Doodle+Shadow&display=swap');
 
 
-:root{
-    --color-content-1:red;
-    --color-content-2:orange;
-    --color-content-3:yellow;
-    --color-content-4:rgb(11, 59, 11);
-    --color-content-5:blue;
-    --color-content-6:purple;
-    --color-content-7:pink;
-    --color-content-8:brown;
-    --color-btn-1:rgb(185, 126, 126);
-    --color-btn-2:rgb(188, 149, 97);
-    --color-btn-3:rgb(188, 188, 97);
-    --color-btn-4:rgba(97, 188, 97,0.2);
-    --color-btn-5:rgb(97, 188, 188);
-    --color-btn-6:rgb(97, 97, 188);
-    --color-btn-7:rgb(188, 97, 188);
-    --dark:#363949;
+/* 深色主題樣式 */
+body {
+  background: var(--grey);
+  overflow: hidden;
+
+  &-dark {
+    --light: #181a1e;
+    --grey: #25252c;
+    --dark: #fbfbfb;
+  }
 }
 
-.blog {
-    top: 0;
-    width: 340px;
-    height: 100%;
-    background-color:var(--color-btn-4);
-    position: fixed;
-    /* 位置固定 */
-    border-right: 0.5px solid var(--color-btn-4);
+:root {
+  --color-content-1: red;
+  --color-content-2: orange;
+  --color-content-3: yellow;
+  --color-content-4: rgb(11, 59, 11);
+  --color-content-5: blue;
+  --color-content-6: purple;
+  --color-content-7: pink;
+  --color-content-8: brown;
+  --color-btn-1: rgb(185, 126, 126);
+  --color-btn-2: rgb(188, 149, 97);
+  --color-btn-3: rgb(188, 188, 97);
+  --color-btn-4: rgba(97, 188, 97, 0.2);
+  --color-btn-5: rgb(97, 188, 188);
+  --color-btn-6: rgb(97, 97, 188);
+  --color-btn-7: rgb(188, 97, 188);
+  --light: #f6f6f9;
+  --primary: #1976d2;
+  --light-primary: #cfe8ff;
+  --grey: #eee;
+  --dark-grey: #aaaaaa;
+  --dark: #363949;
+  --danger: #d32f2f;
+  --light-danger: #fecdd3;
+  --warning: #fbc02d;
+  --light-warning: #fff2c6;
+  --success: #388e3c;
+  --light-success: #bbd7d0;
+}
 
-    .main {
-        display: grid;
-        width: 300px;
-        justify-content: center;
-        align-items: center;
-        padding-left: 20px;
-        padding-top: 40px;
-        margin-left: 5px;
-    }
+html {
+  overflow: hidden;
+}
+
+.main {
+  height: 100%;
+  width: 340px;
+  padding-top: 40px;
+  left: 0;
+  top: 0;
+  background-color: var(--color-btn-4);
+  /* 位置固定 */
+  border-right: 0.5px solid var(--color-btn-4);
+  position: fixed;
+  overflow: auto; //新增一個捲動器
+  text-align: center;
+  transition: all 0.3s ease;
+
+  li {
+    list-style: none;
+  }
+
+  .main::-webkit-scrollbar {
+    display: none;
+  }
+
+  .icon img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 25px;
+  }
+
+  .main h4 {
+    font-size: 20px;
+    color: cadetblue;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    letter-spacing: 2px;
+    color: cadetblue;
+    gap: 30px;
+    list-style: none;
+    font-size: 15px;
+  }
+
+  .navbar a {
+    color: cadetblue;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding-left: 0;
+  }
+
+  .solo {
+    display: flex;
+    padding-top: 30px;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .classdemo a:hover {
+    color: var(--color-content-4);
+    cursor: pointer; //當我滑鼠懸停在該元素時 鼠標樣式會變成手指
+  }
+
+  .about a:hover {
+    color: var(--color-content-4);
+    cursor: pointer;
+  }
+
+  .traning a:hover {
+    color: var(--color-content-4);
+    cursor: pointer;
+  }
+
+  .demo {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-btn-4);
+    list-style: none;
+  }
+
+  .theme-toggle {
+    display: block;
+    min-width: 50px;
+    height: 25px;
+    background: var(--color-btn-4);
+    cursor: pointer;
+    position: relative;
+    border-radius: 25px;
+  }
+
+  .theme-toggle::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: calc(25px - 4px);
+    background-color: var(--color-btn-3);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  .showalldemo {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+//contnet
+.content {
+    width: calc(100% - 340px);
+    height: 100%;
+    left: 350px;
+    top: 0;
+    overflow: auto;
+    position: fixed;
+
     
-    .icon img {
+
+  .container {
+    display: flex;
+    position: relative;
+    width: 300x;
+    height: 300px;
+    transition: all 0.3s ease;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+    i {
+      display: none;
+    }
+    h1 {
+      color: white;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 2rem;
+
+      span {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px gray;
+      }
+      p{
+        font-size: 15px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px gray;
+      }
+    }
+    img{
         display: block;
-        width: 80%;
-        height: 80%;
-        object-fit: cover;
-        border-radius: 50%;
-    
-    }
-    
-    .main h4 {
-        font-size: 20px;
-        color: cadetblue;
-        text-transform: capitalize;
-        padding-top: 20px;
-        padding-left:40px;
-        font-family:'Poppins',sans-serif
-    
-    }
-    .navbar{
-        display: grid;
-        font-family:'Poppins',sans-serif ;
-        padding-top: 50px;
-        padding-left: 100px;
-        letter-spacing: 2px;
-        color: cadetblue;
-        align-items: center;
-        gap: 20px;
+        border-radius: 52%;
         
     }
-    .navbar a{
-        color: cadetblue;
-    }
-    .solo{
-        display: flex;
-        padding-top: 30px;
-        gap: 5px;
-        align-items: flex-start;
-        justify-content: flex-start;
-    
-    }
-    
-    .classdemo a:hover{
-        color: var(--color-content-4);
-    }
-    .about a:hover{
-        color: var(--color-content-4);
-    }
-    .traning a:hover{
-        color: var(--color-content-4);
-    }
-    
-    
-
-    .demo{
-        display: none;
-    }
-    .social-icons{
-        display: flex;
-        gap: 2rem;
-        padding-top: 400px;
-        padding-left: 50px;
-        color: cadetblue;
-        position: fixed;
-    }
-    
+  }
 }
 
-
-
+#theme-toggle:checked + .theme-toggle::before {
+  left: calc(100% - (25px - 4px) - 2px);
+}
