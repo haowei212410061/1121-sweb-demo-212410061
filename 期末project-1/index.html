@@ -1,0 +1,195 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haowei blog</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- blog nav -->
+    <div class="main">
+      <div class="icon">
+        <img src="./image/9.jpg" alt="" />
+      </div>
+      <h4>Haowei_blog</h4>
+      <ul class="navbar">
+        <li class="about" onclick="loadpage('./aboutme.html')">
+          <a src="#container">Resume</a>
+        </li>
+        <li class="classdemo">
+          <a>Gallery</a>
+          <ul class="demo">
+            <li class="link-demo" onclick="loadpage('../demo/w02_61/index.html')"><a href="#">w02_61</a></li>
+            <li class="link-demo" onclick="loadpage('../demo/w03_61_card/index.html')"><a href="#">w03_61_card</a></li>
+            <li class="link-demo" onclick="loadpage('../demo/w04_61_blog/index.html')"><a href="#">w04_61_blog</a></li>
+            <li class="link-demo" onclick="loadpage('../demo/w05_61/index.html')"><a href="#">w05_61</a></li>
+            <li class="link-demo" onclick="loadpage('../demo/w06_61/index.html')"><a href="#">w06_61</a></li>
+            <li class="link-demo" onclick="loadpage('../demo/w07_61_tile/index.html')"><a href="#">w07_61_title</a></li>
+            <li class="link-demo" onclick="loadpage('../demo/w11-_mid-2_61/p5_61.html')"><a href="#">w11-_mid-2_61</a></li>
+            <li class="link-demo" onclick="loadpage('../demo/w12_portfolio_61/index.html')"><a href="#">w12_portfolio_61</a></li>
+            <li class="link-demo" onclick="loadpage('../demo/w13_portfolio_61/index.html')"><a href="#">w13_portfolio_61</a></li>
+            <li class="link-demo" onclick="loadpage('../demo/w14_portfolio_61/index.html')"><a href="#">w14_portfolio_61</a></li>
+            <li class="link-demo" onclick="loadpage('../demo/w15_portfolio_61/index.html')"><a href="#">w15_portfolio_61</a></li>
+            <li class="link-demo" onclick="loadpage('../demo/w16_portfolio_61/index.html')"><a href="#">w16_portfolio_61</a></li>
+          </ul>
+        </li>
+        <li class="traning">
+          <a>traning poject</a>
+        </li>
+        <ul class="social-icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-behance"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </ul>
+        <input type="checkbox" name="" id="theme-toggle" hidden />
+        <label for="theme-toggle" class="theme-toggle"></label>
+      </ul>
+    </div>
+
+    <iframe id="pageiFrame"></iframe>
+    <!-- blog main content -->
+    <div class="resume">
+      <div class="left">
+        <h1>周浩偉</h1>
+        <h4>淡江大學 | 資訊工程學系</h4>
+        <hr>
+        <p>覺得網頁設計是一件很酷的事情</p>
+        <div class="buttons">
+          <a class="btn fill" href="https://1121-sweb-demo-212410061.vercel.app/" target="_blank">vercel</a>
+          <a class="btn" href="https://github.com/haowei212410061/1121-sweb-demo-212410061" target="_blank">Github</a>
+        </div>
+        <div class="block">
+          <h4>Skills</h4>
+          <h2>正在學習的技能</h2>
+          <ul class="listSkill">
+            <li>
+              <div class="circle">
+                <div class="p5"></div>
+                <div class="p0"></div>
+                <div class="p0"></div>
+                <div class="p360"></div>
+              </div>
+              前端網頁開發(html/css/js)
+            </li>
+            <li>
+              
+              <div class="circle">
+                  <div class="p5"></div>
+                  <div class="p0"></div>
+                  <div class="p0"></div>
+                  <div class="p360"></div>
+              </div>
+              C語言
+            </li>
+            <li>
+              
+              <div class="circle">
+                  <div class="p5"></div>
+                  <div class="p0"></div>
+                  <div class="p0"></div>
+                  <div class="p360"></div>
+              </div>
+              python
+            </li>
+            <li>
+              
+              <div class="circle">
+                  <div class="p5"></div>
+                  <div class="p0"></div>
+                  <div class="p0"></div>
+                  <div class="p360"></div>
+              </div>
+              photoshop
+            </li>
+          </ul>
+        </div>
+        <div class="block">
+          <h4>Programming Skill</h4>
+          <h2>程式技能</h2>
+          <ul class="listProgram">
+            <li>C
+              <div class="bar">
+                <div class="value p20"></div>
+              </div>
+            </li>
+
+            <li>Python
+              <div class="bar">
+                <div class="value p20"></div>
+              </div>
+            </li>
+            <li>Html/Css/Js
+              <div class="bar">
+                <div class="value p20"></div>
+              </div>
+            </li>
+
+    
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="block">
+          <h2>經歷與作品</h2>
+          <ul class="listExperience">
+            <li class="year">2023-9
+              <ul>
+                <li>軟體測試實習生</li>
+              </ul>
+            </li>
+            <li class="year">2023-12
+              <ul>
+                <li>軟體測試實習生</li>
+              </ul>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container" id="container">
+          <i class="fa-solid fa-bars"></i>
+          <h1>
+              <span>興趣</span>
+              <p>我的興趣不僅僅局限於電腦，我也熱愛電影。在忙碌的學業生活中，我發現看電影是釋放壓力和放鬆心情的最佳方式之一。</p>
+          </h1>
+          <button class="btn">了解我</button>
+      </div>
+      
+      <div class="container" id="container">
+          <i class="fa-solid fa-bars"></i>
+          <h1>
+              <span>夢想 </span>
+              <p>透過學習HTML、CSS和JavaScript等程式語言，我希望能夠創造出令人驚嘆的網頁應用，賦予靜態的界面以生動的互動體驗</p>
+          </h1>
+          <button class="btn">學習途徑</button>
+      </div>
+      <div class="container" id="container">
+          <i class="fa-solid fa-bars"></i>
+          <h1>
+              <span>實習經歷 </span>
+              <p>實習經歷為我提供了實現自己職業目標的寶貴機會，並為我未來的職業生涯奠定了堅實的基礎</p>
+          </h1>
+          <button class="btn-3">實習經歷</button>
+
+
+      </div>
+  </div>   
+
+    <!-- 當classdemo裡的子導覽列被點擊 在此區塊呈現-->>
+    <script src="./main.js"></script>
+  </body>
+</html>

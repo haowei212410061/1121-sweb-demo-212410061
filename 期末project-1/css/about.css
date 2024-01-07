@@ -1,0 +1,207 @@
+@charset "UTF-8";
+.resume {
+  width: calc(100% - 650px);
+  height: 600px;
+  margin-left: 400px;
+  margin-top: 10;
+  overflow-y: auto;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark);
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  font-family: "微軟正黑體", sans-serif;
+  border-radius: 10px;
+  /* 複寫區 */
+  /* list skill */
+  /* list program */
+}
+.resume ul {
+  padding: 0;
+  list-style: none;
+}
+.resume h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.resume h2::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 8px;
+  background-color: #FF7168;
+  margin-left: 10px;
+}
+.resume h4 {
+  margin: 0;
+  margin-top: 40px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+.resume a {
+  color: white;
+  text-decoration: none;
+}
+.resume hr {
+  border: none;
+  border-bottom: solid 4px #FF7168;
+  width: 40%;
+  margin-left: 0;
+}
+.resume .left {
+  flex: 5;
+}
+.resume .right {
+  flex: 7;
+}
+.resume .left,
+.resume .right {
+  padding: 15px;
+}
+.resume .left {
+  padding-right: 50px;
+  border-right: solid 1px #FF7168;
+}
+.resume .right {
+  padding-left: 50px;
+  padding-top: 150px;
+}
+.resume .listExperience > li {
+  display: flex;
+  margin-bottom: 10px;
+}
+.resume .listExperience > li:nth-child(1) ul {
+  border-color: #FF7168;
+}
+.resume .listExperience > li:nth-child(2) ul {
+  border-color: #FFA582;
+}
+.resume .listExperience > li:nth-child(3) ul {
+  border-color: #FFB087;
+}
+.resume .listExperience > li:nth-child(4) ul {
+  border-color: #FFDE9E;
+}
+.resume .listExperience li ul {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: solid 4px white;
+}
+.resume .listSkill {
+  display: flex;
+  flex-wrap: wrap;
+}
+.resume .listSkill li {
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.resume .circle {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 113, 104, 0.4);
+}
+.resume .circle::after {
+  content: "";
+  display: block;
+  background-color: #02005B;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.resume .p90,
+.resume .p180,
+.resume .p270,
+.resume .p360 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #FF7168;
+}
+.resume .p180 {
+  top: 50%;
+}
+.resume .p270 {
+  left: 0;
+  top: 50%;
+}
+.resume .p360 {
+  left: 0;
+  top: 0;
+}
+.resume .listProgram .bar {
+  width: 150px;
+  height: 10px;
+  border: solid 2px #FF7168;
+  border-radius: 5px;
+}
+.resume .listProgram li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.resume .value {
+  height: 100%;
+  width: 60%;
+  background-color: #FF7168;
+}
+.resume .value.p10 {
+  width: 10%;
+}
+.resume .value.p20 {
+  width: 20%;
+}
+.resume .value.p30 {
+  width: 30%;
+}
+.resume .value.p40 {
+  width: 40%;
+}
+.resume .value.p50 {
+  width: 50%;
+}
+.resume .value.p60 {
+  width: 60%;
+}
+.resume .value.p70 {
+  width: 70%;
+}
+.resume .value.p80 {
+  width: 80%;
+}
+.resume .value.p90 {
+  width: 90%;
+}
+.resume .value.p100 {
+  width: 100%;
+}
+.resume .btn {
+  border: solid 3px #FF7168;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+.resume .fill {
+  background-color: #FF7168;
+}
+
+/*# sourceMappingURL=about.css.map */
