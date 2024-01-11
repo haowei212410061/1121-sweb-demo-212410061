@@ -20,6 +20,9 @@ function showdemo(week){
         case 7:
             p.innerHTML = `<iframe src="./w07_61_title/index.html" width="100%" height="100%" />`
             break;
+        case 8:
+            p.innerHTML = `<iframe src="../期末project-1/index.html" width="100%" height="100%" />`
+            break;   
                 
     }
 }
